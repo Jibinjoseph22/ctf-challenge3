@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEase</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f8f9fa;
+            color: #333;
+        }
+        header {
+            background: #007acc;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        nav {
+            background: #005a99;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            background: linear-gradient(to right, #007acc, #00d4ff);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+        .hero h2 {
+            margin: 0;
+            font-size: 2.2rem;
+        }
+        .hero p {
+            margin: 10px 0 20px;
+            font-size: 1.2rem;
+        }
+        .hero button {
+            background: #fff;
+            color: #007acc;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.2s ease;
+        }
+        .hero button:hover {
+            background: #00d4ff;
+            transform: scale(1.05);
+        }
+        .products {
+            max-width: 1200px;
+            margin: 40px auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+        
+        .product-card {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+            font-size: 1.2rem;
+            color: #007acc;
+        }
+        .product-card p {
+            font-size: 0.9rem;
+            color: #666;
+            margin: 10px 0 20px;
+        }
+        
+        .product-card button {
+            background: #007acc;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 0.9rem;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .product-card button:hover {
+            background: #005a99;
+        }
+        footer {
+            background: #005a99;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: 40px;
+        }
+        
+    </style>
+    <div class="hidden-flag"></div>
+    
+    <script>
+        function showMessage() {
+            alert("Oops, you are not in the right path!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>ShopEase</h1>
+    </header>
+    
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#products">Products</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="hero">
+        <h2>Welcome to ShopEase!</h2>
+        <p>Your one-stop shop for the best products at unbeatable prices.</p>
+        <button onclick="showMessage()">Start Shopping</button>
+    </div>
+    <div id="products" class="products">
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcRJPlOiFDnQCaEskdeC9s-62uHasizq-Xe3GgzC6OelX4F6ZdtrZA6xKbu-k0s9q5uB7E3x6SLrJ3pu1Vh8Cb1P-x8A0JvMUgASKfGs97OkvMchyNyIFcIINA" alt="Product 1">
+            <h3>LG SMART TV</h3>
+            <p>High-quality product at an amazing price.</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSFfzq4KYKcNIOplVjpjgJavcuuC0UeyAcQA08UYKSqgotPdgCMz4YiUpBdCksDZZ10vMhO7q735J_-7pwQh83xGGqtXQC9OATPYYfQeSUJfjAzQijSFB33bAIMjigg&usqp=CAc" alt="Product 2">
+            <h3>Wildcraft Shoes</h3>
+            <p>Grab this deal while it lasts!</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://dlcdnwebimgs.asus.com/gain/D3ABBAE4-00AA-4481-A2D1-AD14B0A766DC/w185/fwebp" alt="Product 3">
+            <h3>ASUS LAPTOP</h3>
+            <p>Top-notch product loved by customers.</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSSIlm8IwYA6VvvEkU8RVHeZmYm8zwSQ-s0LK32zryCs06NV3kaKCdfGxC3-8I3p0TtOncZv_EKFOnY7HuaPa0zu4yRzwSWMVSRFdEpFLmlRwAByyD7cVz25A" alt="Product 4">
+            <h3>SHIRT</h3>
+            <p>A product you can’t miss!</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQFVJ_hj3iHwp0s2TgszPTAdLzc__wDchvl1IAh5XIVmgIlQGlpvgDBi9sFWTq9E_hdqzftEyopc6mZR5ibqkhULuH4L89K-2vsK5iivoOw" alt="Product 4">
+            <h3>Motorola G45</h3>
+            <p>A product you can’t miss!</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcThcYG_s3lbxwTMkmVFNR85rBXxdbzeBU5BbTOxo6fDDHQe9AI1tH-wDtyceyLKPQvggPVikBhSq6U1TfiSf-PZkrtQyji_D8OWxQ-dwJcexVlhOty1iexdfQ" alt="Product 4">
+            <h3>Anarkali gown</h3>
+            <p>A product you can’t miss!</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="data:image/webp;base64,UklGRq4LAABXRUJQVlA4IKILAABwLQCdASqOAI4APkkijkUioiETm41kKASEsoBq9lzpmk5c3zpHu/IcGx3BXPHM0+xm+tf2D9x+NJER7U/4P9w9BO+X4M6gX4x/J/8h6OD+bQb0C/ZX6d/sP7t7I/0vmn4gH5dccJQA/THoW/VXoY+mf/L7hv88/uP/T7Hn7l+0X+1xiHWTHeNsltdGAo4j3MZefYd6shwLi0jIs1l4jkxK3M+YSOfv7VYNMI7fQg38rsgO2HelQGJ/qZnARjdvO81OZ8TDK00YuijrfDGeNPUpZysUPdJaWWioRlE8+/qAYfwwq/RMpuPNcpJqBVQbGamv7NCiGNcTLimlCAe1suXnE94Iewj9WhaQ2BgbO9Bfp/NdvjrL6cW5B/Y09SHxtORqhbhQwaU8zskdsJKvEsRqcMDv+7lb5v53Qx63fD4NdPyzycONLxWfaKu9cjDzTEZ2GUgKemSoZ94K4NpP4NJbh4OUIx2ooeLS1NsltdGAo6yY0gAA/v2A8AAAvZDcjc7eSVI13g8HTvX4cmBuWmJe8jYeMn51yrt9pvGZgeHVdq8+qS4rjjntjrcS5H5n5Q07ppzJVbdh780zAqtW2Z7KCHqT2IJfqGQUtSJsbSVXZcvjdn4ljGh0XL/NyN9Qa7PkxmNgYniPTlx1jH3areiQsSyO5knypy+xWaXzgnhKJS1pNoVXDLMnoEUkgFUYqkl+2HRhrHqTPCnXDEMOwt3eopXgeiD8h59EAz3zJRT7HVOHRX27glcpJiQZQjIwIRtWxxxuDSv48mZfeDmHvctt9vC9e1cayV5yNbEhwa/wR3VZ1zO7LpA6umuEL+FNaxJL2vvhcH30s2VUNuD8NnaKYIDopuOLy59qCbIW+7u+bZ6F0q03C0Azpnl8P0bhUY2MRm5b/KXCV1eXZG66e0gI4+/L+liXJHUAVLZdA/xdhENKGPs7H8YCyFS6b6ghC3oXiXz/QX1X02fCTI//7gyN1f8Wgjdmhu4YNRl6z8GB71Q3tcXuOHw2LEyh8jC3PAN6fSA28lU4KxiTLFZVhybpJjsvceoEM8o3qJvUyaAr6Zq75HZeVKnttSKpDRwhq/lWp+fS2jvSuogyoE7wSKdgzNw1VaIcH44aDZdKj8O+rr5e0vJkCy99pz+WhkJM5h5dmhcjnMX5nmvdPDADJrIERFkKYOVWqJy2USyKWheLd7bPuujKnenPyNROOLMOJc/R/TwGgHeX+D4VYdX6zjoc7ufVepEfZgdZ1zzz3Vk4r7ff/VNU1zLMccrRtgJcb31aQ4//xNxwbg767xfjfQTpmF3X+OG0XqcRHfXUXooVyq1U9MKZbdu6+r+j03rMr16ft6CtbtYictR7lilqGXYW1psmc7NSe5sb3x1aVymqbKmHnh0ULPDw6pHb2ixfHA1e+mEmcLkuh/hucU/lp9bDIL1xArxTxolRp51Yhv1/jO37xVx3QdN4bclBiyJtqZ1d7prGd9ZQQpNr8APZK6TH0Uhpu5tlkSTOD5jFb0M93/iMaShTToYaap60L8DLjMG1glWSJstdsI5R2hRXYnTYzuJ8+2RdhfRNzf0Bnf0OK4RmilZ4h/f4FizJ7ujFuQpATACinL0zMQQISTib4aHKWlJgnj8ZI1MdEzzermfN0NDCzxjze0uizRNSHlqQ4G5+guabG+QbhW6rBa9souX5iFHx60knOdSGZzsaZguAuNhDpWniapH6VtIArvXmQ5lpb90o4ZANzif19H9AzvnOkN98EsxvD0C1FA4XlfvomqZgJ0RZH25hJ1Jsrzdz1eINHVnPdnmtFI9oOm92Bz+y/GPD9DbvaRIL/TqED984AY/hAm43FpVfcAzxf4xbSM0kAx03YsNpxx3MRpZa1Eq7d3IfhDq0osGjDSnP5QxEaaX8pVa4NDhnWWrptd+Rd4avAOQbWcBP8tMlNYb/H+/NZIeDmtH/aGiaHt/2wuaD8uS0m69uvqXly1BFl4WgbjZyEuN1RmY3hxKUSCKPp/RYFGxuts0Cf9y9WaJ5jjzkDz8eupV/m0s1EBMiE0A+vY1sF/s++5Ru5eyMSix7TzeimkWgGK3n/nLY79q3er6J7boA/89BnFqEU5Uk1/QoESDYyJHv/mGIXr5Cxb7iV86pGplNWx+aJ4ob0LoQtFhE7Aqsc8vufAy1sflfHpQ2e32+neKheC+VoeLf8X/qJsyqCxFWuPdNrnR165odG3Pm0NwQTgcV6pDCdvjWLS03m3k9EA6te5UPN+FomtYXOyRdR2NyYqb6L7PJFB4ptbxIiT0cf6YPnHiYpnHPf/QTTS0gb5xa65ysOyHcX+JUvEgm2DetWEoyCmcXP+IhqblpDzScBHUlQbcIYDuclWWcXU474HPh0qysFrc58kUjxugMLWPJ4tH0aQTW32AC4z5RGJ4/WFvPvzjAQMUoJnD/y0/Hkd9g6zLfyja7yUCd78ruY0sfltkJP8irXKNobb5xgs5RFLghKguP7XbbWlQBd8dun4Msu4m0Rsq6VsASIwdUAgCIm+95DvP2jUpLVcjKKzkEts50FHTxC6pfx7pk9x/aijKyVGgKKnUAbIVcJAaFpHIkcqSQzXaG5lQkywHcTZkA279JQWJ7U6+PnD9xmwTA1ieA+dkVRZuI6qsUyUOjcA6sIj4MWI2sZu3T3MVGQhh4g0CgEfK2o5cItBZjuSc2N6jWBfX7XN2fUUsZgWjHZeVdlp2/TRpxsgqkIXTY4J2qXeaOi/K5+G+eS23AuxXqLC3Wo/lxQncdlswCkyR1BoWad0mBsGJn6n33rMDFsoL3NwEHqVyVnKf0hu3f8Mi80ztu2eZnVGphZqaw6t/7Z49oKe69I8PblJn9eZ/+kXvbNwZA9X+igUNWfQcVmf5FlclzSOOPymWHfkdpYxIJBexg83BwTgwlpHgbt0x9pDlxamZuIGXFluNbQ7Xs9J8hIAtzo28AxDrt93h1Ocql8JPaOeE/iZUPekAe4cGT1gIWl24xhOgRmi1RQ6bbXKy7w+m97soFGl16e6KWKz8bAgMYlV89NJgnmhSBaG6wUFn3YVqs+aV74ZHa5d0HoeoliqyBXx+xqR8UL7pR1G+7nAPGGM7BxX+In3ayttczE+IJ+YpdbDQWhVWqq8SYvm8J1r4yhvWB7Ne+FBQxIUvaEfoGtHAcXor0dgqeTsyJpb3zqG8FwG1pDQ4oS+cEI9KLRVj6Wx2X1/yy3y5WBNoD/p3A+0OR0rfGKKnyhCIN3T2ZUZKcW9c/hkUH20b8R8fNPAHrB1v2oxD4mBn+KIUz5qDSGEDURfk3mDY7agr7yQg2HbjhJWHjtyHxWcCKToetTnBfEDyPBz9QSsiDk9DNs8D5GQLDYPfTJy6JVHuVlSc9aEo52J3oBUOylXYtBMuIwCEw7k8IPskf+HwT1nbXl0a4EgHk2fjpdlu6uV/0nV4A73ttKMw/jgfPftSqGqALLXs0piXauveuc/lJ2X5IBMQSFJ5ibzvYee7JWtH3b6d9t0sRHQQdU6nT9800fU8ib5f3zOC6XDhxwhhQ/hPYysiP4EuDFI+3q/3OWlR2w8twn4c/MwPkY3x28VSXvsNdRConToG0RQ+eXZ1xx3lnCzkTeVppZkzPAzr2BqzeUs3ff8KQWF+4GKOnU9D2a+LzFTKGWeWTogk2kFrHy2jpbZpJPtM0QxHpTCTiGzciTPkG3GQ8Atl0ZUvWHcmQlRGoRZaJyUiCPvmJXKjgfP9IzxEcZJ6KflB5WL3WMdSUM9EweNwTE3GijHPNbQ/tuifOvluMoxU0XsCTlcgJEH1K1fVE+aDLJobaedkS1Esg27I116RV+h15qAh3zYLKU9JshJixmbqeo9uAwvx0Wla3FoR9nF+M9EbI37Es71cD3C9vSySNPyDK/HRTg0//8ZbOkfbpubtq++STCAnFqy8lQCUChUhesx+HhD92g0b34okApGyUc5g23noSAAAAAAAAAA==" alt="Product 4">
+            <h3>Shoes</h3>
+            <p>A product you can’t miss!</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+        <div class="product-card">
+            <img src="data:image/webp;base64,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" alt="Product 4">
+            <h3>Beard Trimmer</h3>
+            <p>A product you can’t miss!</p>
+            <button onclick="showMessage()">Add to Cart</button>
+        </div>
+
+    </div>
+    <div style="display: none;">U0VDUkVUX0ZMQUd7QmFzZTY0X0lzX0Z1bn0=</div>
+    <footer>
+        <p>&copy; 2024 ShopEase | All Rights Reserved</p>
+    </footer>
+</body>
+</html>
